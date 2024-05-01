@@ -1,0 +1,49 @@
+from models import Recruit, session
+
+
+with session as s:
+    s.add_all(
+        [
+            Recruit(
+                first_name="Nomfundo",
+                surname="Zulu",
+                chatname="Nomfundo",
+                github_name="Nomfundo",
+                id_number="9902040085087",
+                personal_email_address="nomfundo.zulu@umuzi.org",
+            ),
+            Recruit(
+                first_name="Lindi",
+                surname="Baholo",
+                chatname="Lindi",
+                github_name="Lindi",
+                id_number="9804210757080",
+                personal_email_address="lindi.baholo@umuzi.org",
+            ),
+            Recruit(
+                first_name="Lerato",
+                surname="Kekana",
+                chatname="Lerato",
+                github_name="Lerato",
+                id_number="0005050866081",
+                personal_email_address="lerato.kekana@umuzi.org",
+            ),
+            Recruit(
+                first_name="Kabelo",
+                surname="Dladla",
+                chatname="Kabelo",
+                github_name="Kabelo",
+                id_number="0012210845982",
+                personal_email_address="kabelo.dladla@umuzi.org",
+            ),
+            Recruit(
+                first_name="Thando",
+                surname="Mathebula",
+                chatname="Thando",
+                github_name="Thando",
+                id_number="9701188701086",
+                personal_email_address="thando.mathebula@umuzi.org",
+            ),
+        ]
+    )
+    s.commit()
